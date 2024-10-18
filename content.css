@@ -1,0 +1,20 @@
+#screenshotCanvas {
+  border: 1px solid #007bff;
+}
+
+.selection {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 2px dotted #007bff;
+}
+
+.selection {
+  position: absolute;
+  border: 2px dotted #007bff;
+  background-color: rgba(0, 123, 255, 0.2);
+  pointer-events: none;
+  display: none;
+  z-index: 9999;
+  box-sizing: border-box;
+}

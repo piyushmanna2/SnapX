@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapX - Snipping Tool For Chrome</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SnapX - Snipping Tool For Chrome</h1>
+        </header>
+        <img id="screenshotImage" src="https://dummyimage.com/1080x720"></img>
+        <div class="button-group">
+            <button id="takeScreenshot"><i class="fas fa-camera"></i> Take Screenshot</button>
+        </div>
+        <div class="button-group bottom">
+            <button class="run-button" id="try-again">Try Again</button>
+            <button class="reset-button" id="reset-button">Reset</button>
+        </div>
+    </div>
+
+    <div class="container mt-10">
+        <header>
+            <h1>Result</h1>
+        </header> 
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

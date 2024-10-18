@@ -1,0 +1,27 @@
+{
+  "name": "SnapX - Screenshot and Image Analysis Tool",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "SnapX is a powerful Chrome extension for taking screenshots, analyzing images, and generating results, all within your browser.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["sidePanel", "scripting", "activeTab", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "action": {
+    "default_title": "SnapX - Chrome Screenshot and Image Analysis Tool"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2canvas.min.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
